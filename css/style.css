@@ -1,0 +1,145 @@
+/*reset*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*debug-header*/
+.debug {
+    background-color: black;
+}
+.debug .container .header-top, .bottone{
+    background-color: #A1C8D5;
+    height: 50px;
+}
+.debug .container .header-bottom{
+    height: 250px;
+    background-color: #00008B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*HEADER*/
+.container{
+    max-width: 80%;
+} 
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-top-box{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    border: 1px dashed black;
+}
+
+.header-pink{
+    background-color: #EE82EE;
+    width: 60%;
+    height: 80%;
+}
+
+/*debug-main*/
+.debug main {
+    width: 80%;
+}
+
+main>*{
+    height: 250px;
+}
+
+.section-main {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>* {
+    background-color: #22272A;
+    width: 80%;
+    height: 250px;
+}
+
+/*MAIN*/
+.box {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+.pink, .blue {
+    border: 1px dashed black;
+    width: 80%;
+}
+.blue {
+    background-color: #1F90FF;
+    width: 80%;
+}
+.pink {
+    background-color: #FEC1CB;
+    width: 20%;
+}
+main>section:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+.box-green {
+    border: 1px dashed black;
+    background-color: #238B22;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+}
+main>section:nth-child(4) {
+    height: calc(250px*2);
+}
+
+/*FOOTER*/
+.section-footer {
+    display: flex;
+    align-items: center;
+}
+.dark-box {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.dark-box>* {
+    background-color: #23B2AA;
+    width: 80%;
+    height: 100%;
+    border: 1px dashed white;
+}
+.dark-box>div:first-child {
+    background-color: #F08180;
+    width: calc(100%*2);
+    border: 1px dashed black;    
+}
+
+.bottone {
+    border-top: 1px solid white;
+    background-color: #22272A;
+}
+.bot-box {
+    width: 80%;
+    height: 80%;
+    background-color: #69CCAA;
+    display: flex;
+    align-items: center;
+}
+.bot-box>* {
+    border: 1px dashed black;
+    background-color: #CB939B;
+    padding: 5px 10px;
+}
