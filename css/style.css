@@ -9,90 +9,147 @@
 .debug {
     background-color: black;
 }
+.debug .header-top-box{
+    background-color: yellow;
+}
+.debug .header-top-box .row>* {
+    border: 1px dashed black;
+}
 .debug .container .header-top, .bottone{
     background-color: #A1C8D5;
-    height: 50px;
 }
 .debug .container .header-bottom{
-    height: 250px;
     background-color: #00008B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.debug .header-pink{
+    background-color: #EE82EE;
 }
 
 /*HEADER*/
 .container{
-    max-width: 80%;
+    max-width: 1000px;
 } 
+.header-top, .bottone {
+    height: 50px;
+}
+.header-top-box {
+    max-width: 80%;
+}
 
-.header-top{
+.row {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row>div {
+    width: calc(100%/4);
+}
+.row>div:nth-child(2) {
+    width: calc(100%/2);
+}
+.row>div:last-child {
+    text-align: right;
+    padding: 10px;
+}
+.list-link {
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.box-pink{
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header-top-box{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: yellow;
-    border: 1px dashed black;
-}
-
 .header-pink{
-    background-color: #EE82EE;
     width: 60%;
     height: 80%;
 }
+header h1{
+    text-align: center;
+}
+.button {
+    width: 50%;
+    border-radius: 50px;
+}
 
-/*debug-main*/
-.debug main {
-    width: 80%;
+/*debug main*/
+.debug .pink, .blue {
+    border: 1px dashed black;
+}
+.debug .section-main {
+    background-color: white;
+}
+.debug .box-green {
+    border: 1px dashed black;
+    background-color: #238B22;
+}
+.debug .blue {
+    background-color: #1F90FF;
+}
+.debug .pink {
+    background-color: #FEC1CB;
+    width: 20%;
+}
+.debug main>section:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+/*MAIN*/
+main {
+    max-width: 1000px;
 }
 
 main>*{
     height: 250px;
 }
-
 .section-main {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-footer>* {
-    background-color: #22272A;
-    width: 80%;
-    height: 250px;
-}
-
-/*MAIN*/
 .box {
     display: flex;
     width: 80%;
     height: 80%;
 }
 .pink, .blue {
-    border: 1px dashed black;
     width: 80%;
 }
 .blue {
-    background-color: #1F90FF;
     width: 80%;
 }
 .pink {
-    background-color: #FEC1CB;
     width: 20%;
 }
-main>section:nth-child(even) {
-    background-color: #D3D3D3;
+.discord {
+    max-height: 100%;
+    max-width: 100%;
+}
+.discord2 {
+    max-height: 100%;
+    max-width: 100%;
+}
+.discord3 {
+    max-height: 100%;
+    max-width: 100%;
+}
+.discord4 {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .box-green {
-    border: 1px dashed black;
-    background-color: #238B22;
     display: flex;
     width: 80%;
     height: 80%;
@@ -102,8 +159,34 @@ main>section:nth-child(even) {
 main>section:nth-child(4) {
     height: calc(250px*2);
 }
+/*debug footer*/
+.debug footer>* {
+    background-color: #22272A;
+}
+.debug .dark-box>* {
+    background-color: #23B2AA;
+    border: 1px dashed white;
+}
+.debug .dark-box>div:first-child {
+    background-color: #F08180;
+    border: 1px dashed black;    
+}
+.debug .bottone {
+    border-top: 1px solid white;
+    background-color: #22272A;
+}
+.debug .bot-box>* {
+    border: 1px dashed black;
+    background-color: #CB939B;
+}
 
 /*FOOTER*/
+footer>* {
+    height: 250px;
+}
+footer {
+    max-width: 1000px;
+}
 .section-footer {
     display: flex;
     align-items: center;
@@ -116,20 +199,11 @@ main>section:nth-child(4) {
     padding-bottom: 10px;
 }
 .dark-box>* {
-    background-color: #23B2AA;
     width: 80%;
     height: 100%;
-    border: 1px dashed white;
 }
 .dark-box>div:first-child {
-    background-color: #F08180;
     width: calc(100%*2);
-    border: 1px dashed black;    
-}
-
-.bottone {
-    border-top: 1px solid white;
-    background-color: #22272A;
 }
 .bot-box {
     width: 80%;
@@ -139,7 +213,5 @@ main>section:nth-child(4) {
     align-items: center;
 }
 .bot-box>* {
-    border: 1px dashed black;
-    background-color: #CB939B;
     padding: 5px 10px;
 }
