@@ -78,15 +78,16 @@ a{
 header h1{
     text-align: center;
 }
-.box-buttom {
+.box-button {
     display: flex;
+    background-image: url(/img/jumbo.png);
 }
-.buttom-header {
+.button-header {
     background-color: white;
     color: #22272A;
     border-radius: 50px;
     border: none;
-    padding: 4px;
+    padding: 5px;
 }
 .apri-discord {
     background-color: #22272A;
@@ -126,6 +127,7 @@ main>*{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/img/wave.svg);
 }
 .section-main-box {
     max-width: 100%;
