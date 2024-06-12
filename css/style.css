@@ -78,9 +78,19 @@ a{
 header h1{
     text-align: center;
 }
-.button {
-    width: 50%;
+.box-buttom {
+    display: flex;
+}
+.buttom-header {
+    background-color: white;
+    color: #22272A;
     border-radius: 50px;
+    border: none;
+    padding: 4px;
+}
+.apri-discord {
+    background-color: #22272A;
+    color: white;
 }
 
 /*debug main*/
@@ -151,7 +161,7 @@ main>*{
 .box-green {
     display: flex;
     width: 80%;
-    height: 80%;
+    max-height: 100%;
     align-items: center;
     flex-direction: column;
 }
@@ -212,13 +222,22 @@ footer {
 }
 .bottone {
     height: 50px;
+    width: 100%;
 }
-.bot-box {
-    width: 80%;
-    height: 80%;
+.bot-box>* {
+    max-width: 100%;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
 }
-.bot-box>* {
-    padding: 5px 10px;
+.logo-ita {
+    width: 20px;
+}
+
+.button-footer {
+    background-color: #7289DA;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 3px;
 }
